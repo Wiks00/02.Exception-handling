@@ -23,10 +23,10 @@ namespace NumConverter
 
             bool isNegative = CheckForNegative(ref stringNumber);
 
-            if (stringNumber.Length > 10 || stringNumber.Length < 1 || string.IsNullOrEmpty(stringNumber) || !stringNumber.All(char.IsDigit))
+            if (ValidationForInt(stringNumber))
                 throw new ArgumentException($"parameter {nameof(stringNumber)} is not valid {typeof(int)}");
 
-            int y ;
+            int y;
 
             try
             {
@@ -56,7 +56,7 @@ namespace NumConverter
 
             bool isNegative = CheckForNegative(ref stringNumber);
 
-            if (stringNumber.Length > 10 || stringNumber.Length < 1 || string.IsNullOrEmpty(stringNumber) || !char.IsDigit(stringNumber, 0))
+            if (ValidationForInt(stringNumber))
                 return false;
 
             try
@@ -71,6 +71,9 @@ namespace NumConverter
 
             return true;
         }
+
+        private static bool ValidationForInt(string str)
+            => str.Length > 10 || str.Length < 1 || string.IsNullOrEmpty(str) || !str.All(char.IsDigit);
 
         private static bool CheckForNegative(ref string str)
         {
