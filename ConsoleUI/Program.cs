@@ -15,8 +15,6 @@ namespace ConsoleUI
         {
             Console.WriteLine("Write 'Exit' to exit programm");
 
-            var num = NumHelper.Parse("-122");
-
             string input = string.Empty;
             List<char> chars = new List<char>();
        

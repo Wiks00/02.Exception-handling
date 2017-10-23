@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI.Exceptions
 {
+    [Serializable]
     public class InputException : Exception
     {
         public InputException()
