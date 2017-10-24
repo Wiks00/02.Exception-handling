@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{6C94CFE7-A35B-437D-9C32-40BDADB4D0E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumConverter", "NumConverter\NumConverter.csproj", "{93F3BBB5-A3C1-4120-8414-D8EFD5C0AE2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumConverter.ConsoleTests", "NumConverter.ConsoleTests\NumConverter.ConsoleTests.csproj", "{ABD41A07-9C55-49AC-9D2E-F1C1D4619D7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{93F3BBB5-A3C1-4120-8414-D8EFD5C0AE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93F3BBB5-A3C1-4120-8414-D8EFD5C0AE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93F3BBB5-A3C1-4120-8414-D8EFD5C0AE2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD41A07-9C55-49AC-9D2E-F1C1D4619D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD41A07-9C55-49AC-9D2E-F1C1D4619D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD41A07-9C55-49AC-9D2E-F1C1D4619D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD41A07-9C55-49AC-9D2E-F1C1D4619D7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
