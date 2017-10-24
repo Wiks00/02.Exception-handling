@@ -10,10 +10,10 @@ namespace NumConverter.ConsoleTests
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Write string for conversion to Int32");
             Console.WriteLine("Write 'Exit' to exit programm");
 
             string input = string.Empty;
-            int resultNumber = 0;
 
             do
             {
@@ -21,14 +21,11 @@ namespace NumConverter.ConsoleTests
 
                 input = input?.Trim(' ');
 
-                if (NumHelper.TryParse(input,out resultNumber))
-                {
-                    Console.WriteLine($"Number from string: {resultNumber}");
-                }
-                else
-                {
-                    Console.WriteLine($"Can not cinvert string: {input} to Int32");
-                }
+                var resultNumber = 0;
+
+                Console.WriteLine(NumHelper.TryParse(input, out resultNumber)
+                    ? $"Number from string: {resultNumber}"
+                    : $"Can not convert string: {input} to Int32");
 
             } while (!input.ToLower().Equals("exit"));
         }
